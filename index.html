@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dobos Dominik</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <h1>Kutyák</h1>
+    <main>
+      <div id="urlap">
+        <h2>Adat bekérés</h2>
+        <form>
+          <div>
+            <label for="faj">Kutya fajtája</label>
+            <input type="text" name="faj" placeholder="Golden retriever" />
+          </div>
+          <div>
+            <label for="meret">Kutya méret (kg)</label>
+            <input type="number" name="meret" min="1" max="60" value="10" />
+          </div>
+          <div>
+            <label for="szorzet">Kutya szőrzete</label>
+            <select name="szorzet">
+              <option value="Rövid szőrű">Rövid szőrű</option>
+              <option value="Hosszú szőrű">Hosszú szőrű</option>
+            </select>
+          </div>
+          <button type="submit">Hozzáadás</button>
+        </form>
+      </div>
+      <div id="tablazat"></div>
+    </main>
+  </body>
+</html>
